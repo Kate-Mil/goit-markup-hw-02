@@ -1,0 +1,17 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+:root {
+  --colorOfHearders: #212121;
+  --colorOfParagraphs: #757575;
+  --activeSelection: #2196F3;
+  --addColor: #FFFFFF;
+
+}
+
+body {
+  background: #F5F5F5;
+}
