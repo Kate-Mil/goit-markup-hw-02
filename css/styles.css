@@ -175,9 +175,19 @@ background-color: #F5F4FA;
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-contacts:hover,
+.footer-contacts:focus {
+color: var(--activeSelection);
+}
+
 .footer-map {
   color: var(--addColor);
   }
+
+.footer-map:hover,
+.footer-map:focus {
+  color: var(--activeSelection);
+  } 
 
 .logo-footer {
   font-family: 'Raleway';
