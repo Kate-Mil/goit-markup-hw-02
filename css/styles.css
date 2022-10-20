@@ -9,15 +9,26 @@
   --colorOfParagraphs: #757575;
   --activeSelection: #2196F3;
   --addColor: #FFFFFF;
+  --backgroundFooter: #2F303A;
 
 }
 
 body {
   background: #F5F5F5;
   color: var(--colorOfHearders);
-  font-family: 'Roboto';
-  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+}
+
+/*----------------------HEADER-----------------------*/
+
+.site-header {
+  background: var(--addColor);
 }
 
 .logo {
@@ -30,17 +41,194 @@ body {
 
 }
 
-.logo .accent {
-  color: #2196F3;
+.accent {
+  color: var(--activeSelection);
 }
 
 .links {
+  font-weight: 500;
+  line-height: 16px;
   letter-spacing: 0.02em;
+}
+
+.links a:hover,
+.links a:focus {
+  color: var(--activeSelection);
+}
+
+.contacts {
   color: var(--colorOfHearders);
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--colorOfParagraphs);
+}
+
+.contacts:hover,
+.contacts:focus {
+color: var(--activeSelection);
+}
+
+
+/*----------------------HERO--------------------------*/
+
+.hero {
+  background: var(--backgroundFooter);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color:var(--addColor);
+  line-height: 60px;
 
 }
 
-.site-nav .links:hover,
-.site-nav .links:focus {
-  color: var(--activeSelection);
+.hero-btn{
+  background-color: var(--activeSelection);
+  color: var(--addColor);
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.hero-btn:focus,
+.hero-btn:hover,
+.hero-btn:active {   
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}     
+
+/*----------------------FEATURES-------------------*/
+
+.features-title {
+  letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.features-text {
+  color: var(--colorOfParagraphs);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/*------------------OUR SERVICES---------------------*/
+
+.sub-title {
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+/*-----------------OUR TEAM------------------------*/
+
+.our-team {
+background-color: #F5F4FA;
+}
+
+.our-team-list {
+  background: var(--addColor);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.our-team-text {
+  color: var(--colorOfParagraphs);
+  font-weight: 400;
+  text-align: center;
+}
+
+/*-------------------FOOTER--------------------*/
+
+.footer {
+  background: var(--backgroundFooter);
+  letter-spacing: 0.03em;
+  }
+
+.footer-adress {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-map {
+  color: var(--addColor);
+  }
+
+.logo-footer {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--addColor);
+}
+
+
+/*---------------PORTFOLIO---------------------*/
+/*---------------FILTRES------------------------*/
+
+.filter-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--colorOfHearders);
+  background: #F5F4FA;
+  border-radius: 4px;
+  border: none;
+
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--addColor);
+  border: 1px solid #000000;
+  background: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/*----------------------PROJECTS----------------*/
+
+.project-title {
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  font-size: 18px;
+}
+
+.progect-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--colorOfParagraphs);
 }
